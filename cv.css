@@ -1,0 +1,112 @@
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(cv.jpg);
+    background-size: cover;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+}
+
+
+.info{
+    width: 200px;
+    position: absolute;    
+    top: 45%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: x-large;
+    font-weight: 700;
+
+}
+
+
+.info h1{
+        float: left;
+        font-size: 40px;
+        border-bottom: 3px solid ;
+        margin-bottom: 50px;
+        padding: 10px;
+        font-family: 'Oxygen', sans-serif;
+
+        
+}
+
+.info_area{
+    width: 100%;
+    overflow: hidden;
+    font-size: 16px;
+    padding: 6px;
+    margin: 6px;
+    border-bottom: 3px solid;
+
+
+
+}
+
+form{
+    width: 560px;
+    text-align: left;
+    height: 600px;
+    display: inline-block;
+    flex-wrap: wrap;
+    padding: 20px 50px 20px 50px;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0 25px 40px -12px  rgba(0, 0, 0, 0.747);
+    border-radius: 30px;
+    cursor: pointer;
+    
+
+
+}
+
+
+html{
+
+    height: 100%;
+}
+
+
+
+
+
+.head{
+    text-align: center;
+    color:white;
+
+}
+
+
+
+input{    
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  box-sizing: border-box;
+  outline: none; 
+  color: white;
+  font-size: x-large;
+}
+
+
+
+#btn{
+     width: 16%;
+     background: fixed;
+     border: 2px solid white;
+     padding: 5px;  
+ 
+
+}
+
+#gender{
+    width: 36%;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
