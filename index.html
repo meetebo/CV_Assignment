@@ -4,25 +4,24 @@
         <title>MY CV</title>    
 
         
-        <link rel="stylesheet" href="cv.css">
+        <link rel="stylesheet" href="cv.css">    
+
+        
     </head>
 
 
     <body>
-        <form action="cv.html" method="GET" target="_blank"></form>
-
-
         <div class="info">
            
         
-        <form>
+        <form action="cv.html" target="_blank" id="forms" name="form" onsubmit="return cv()">
             <div class="head">
                 <h1>Executive Curriculum Vitae</h1>
             </div>
 
             <div class="fname">            
                 <label for="first name">First Name
-                    <input type="text"  placeholder="Enter First Name">
+                    <input type="text"  id="firstname"  name="firstname" placeholder="Enter First Name" required>
                 </label>
                 <br>
                 <br>            
@@ -30,7 +29,7 @@
             
             <div class="mname">
                 <label for="middle name" >Middle Name
-                    <input type="text" placeholder="Enter Middle Name">
+                    <input type="text"  id="middlename" name="middlename" placeholder="Enter Middle Name" required> 
                 </label>
                 <br>
                 <br>
@@ -38,15 +37,15 @@
 
             <div class="lname">
                 <label for="last name" >Last Name
-                    <input type="text" placeholder="Enter Last Name">
+                    <input type="text"  id="lastname" name="lastname" placeholder="Enter Last Name" required>
                 </label>
                 <br>
                 <br>
             </div>
 
             <div class="gender">
-                <label for="gender"  >Gender</label>
-                <select name="gender" id="gender">
+                <label for="gender">Gender</label>
+                <select name="gender" name="gender" id="genders" required>
                     <option value="" disabled selected hidden>Choose Gender</option>
                     <option>male</option>
                     <option>female</option>
@@ -57,15 +56,16 @@
 
             <div class="contact">
                 <label for="phone number">Phone Number
-                    <input type="tel" placeholder="Enter your Tel">
+                    <input type="tel" name="contact" id="contacts" placeholder="Enter your Tel" required> 
                 </label>
                 <br>
                 <br>
             </div>
 
             <div class="email">
-                <label for="email" >Email
-                    <input type="email" placeholder="Enter your Email">
+                <label for="email">Email
+                    <input type="email"  name="email" id="emails"placeholder="Enter your Email" required minlength="8">
+                    <span class="error" aria-live="polite"></span>
                 </label>
                 <br>
                 <br>
@@ -73,21 +73,24 @@
             
             <div class="address">
                 <label for="address" >Address
-                    <input type="text" placeholder="Enter your Address">
+                    <input type="text"  name="address" id="addresses" placeholder="Enter your Address" required>
                 </label>
                 <br>
                 <br>
             </div>
 
+            <button type="submit" id="btn" style="color:white">
+                SUBMIT
 
-            
-            <div id="btn">
-                <input type="submit">
-            </div>
-        
+            </button >
+
         
         </form>
         </div>
+
+
+        
+        <script src="index.js"></script>
     </body>
 
 
